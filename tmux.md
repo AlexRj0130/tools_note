@@ -26,33 +26,43 @@
 - 上一个会话：ctrl+b (
 - 下一个会话：ctrl+b )
 - 重命名会话：ctrl+b $
+- 删除会话
+  - 删除当前会话：ctrl+b: kill-session
+  - 删除所有会话：ctrl+b: kill-server
 
+### 窗口管理
 
-### 分割面板
+- 创建窗口
+  - ctrl+b c
+- 切换窗口
+  - ctrl+b number
+- 重命名窗口
+  - ctrl+b ,
 
-- 水平分割：ctrl+b  "
-- 垂直分割：ctrl+b  %
+### 面板管理
 
-### 切换面板
-
-- 上：ctrl+b  up
-- 下：ctrl+b  down
-- 左：ctrl+b  left
-- 右：ctrl+b  right
-
-- 显式面板序号并切换：ctrl+b q number
-
-### 关闭面板
-
-- 关闭当前面板：ctrl+b x
-
-### 调整面板尺寸
-
-- 上：ctrl+b+up
-- 下：ctrl+b+down
-- 左：ctrl+b+left
-- 右：ctrl+b+right
-
-### 其他
-
-- 在当前面板显式时间：ctrl+b t
+- 分割面板
+  - 水平分割：ctrl+b  "
+  - 垂直分割：ctrl+b  %
+- 切换面板
+  - 显式面板序号并切换：ctrl+b q number
+  - 上：ctrl+b  up
+  - 下：ctrl+b  down
+  - 左：ctrl+b  left
+  - 右：ctrl+b  right
+- 关闭面板
+  - 关闭当前面板：ctrl+b x
+- 调整面板尺寸
+  - 全屏显式当前面板：ctrl+b z（再次操作，则恢复原状）
+  - 上：ctrl+b ctrl+up
+  - 下：ctrl+b ctrl+down
+  - 左：ctrl+b ctrl+left
+  - 右：ctrl+b ctrl+right
+- 调整面板顺序
+  - 左移：ctrl+b {
+  - 右移：ctrl+b }
+  - 上移：ctrl+b ctrl+o
+  - 下移：ctrl+b alt+o
+- 其他
+  - 将面板拆分为单独的窗口：ctrl+b !
+  - 在当前面板显式时间：ctrl+b t
