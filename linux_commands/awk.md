@@ -20,7 +20,7 @@
       - awk 默认根据空格和制表符，将一行内容分成若干个列，依次用 $1、$2...代替;
       - 使用 -F 参数可以自行指定分隔符
       - $1 和 $3 之间的逗号可以在打印时会被使用输出分隔符替换
-  - 示例3：awk -F "[: \\t]" '{print "col2=" $2 ", col4=" $4}' demo.txt
+  - 示例3：awk -F "[: \\t]" '{print "col2=" \$2 ", col4=" \$4}' demo.txt
     - 说明：逐行打印 demo.txt 中每行的第2列和第4列的内容，期间使用冒号、空格和制表符将行分为列
       - 使用 print 命令时，通过使用双引号，可以原样打印指定内容
       - 使用 -F 时，可以通过双引号中间的方括号中的内容，指定多个分隔符
@@ -57,9 +57,9 @@
 
 ## if语句
 
-- 示例1：awk '{if ($1 == "alice") print NR}' demo.txt
+- 示例1：awk '{if (\$1 == "alice") print NR}' demo.txt
   - 说明：逐行打印 demo.txt 中第一列为 alice 的行号
-- 示例2：awk '{if ($1 == "alice" print NR; else print NR ")" $0)}'
+- 示例2：awk '{if (\$1 == "alice" print NR; else print NR ")" \$0)}'
   - 说明：逐行处理 demo.txt 中的内容，如果第一列为 alice，则打印行号；否则，打印行号和改行内容
 
 ## [内置函数](https://www.gnu.org/software/gawk/manual/html_node/Built_002din.html#Built_002din)
