@@ -1,9 +1,14 @@
 [TOC]
 
-# 远程开发：[SSH到远程linux服务器](https://code.visualstudio.com/docs/remote/ssh)
+# Extensions
+
+## Remote Development
+
+---
+### SSH远程开发
 
 - 准备工作
-  - 确保本机可以通过命令行**ssh到远程linux服务器**
+  - 确保本机可以通过命令行[ssh到远程linux服务器](https://code.visualstudio.com/docs/remote/ssh)
   - 在本机的ssh的配置文件下添加如下内容
     ```bash
     Host LinuxServer  # alias of linux server
