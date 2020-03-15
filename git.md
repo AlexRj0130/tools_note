@@ -30,3 +30,10 @@
   git mv old.md new.md
   git mv old2.md ./sub_forder/new2.md 
   ```
+
+## 进阶使用
+
+- git reset
+  - --soft：只改变 HEAD，保持暂存区和工作区不变
+  - --mixed：改变 HEAD 和 暂存区，保持工作区不变
+  - --hard：改变 HEAD、暂存区和工作区
