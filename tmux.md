@@ -58,6 +58,7 @@
   - 下：ctrl+b ctrl+down
   - 左：ctrl+b ctrl+left
   - 右：ctrl+b ctrl+right
+  - 备注：mac 上为 ctrl+b option+up/down/left/right
 - 调整面板顺序
   - 左移：ctrl+b {
   - 右移：ctrl+b }
